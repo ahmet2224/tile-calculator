@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Price Calculator</title> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+    <!--  <img src="assets/img/logo.jpg" alt="Tile Calculator">
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">Ürünler</a>
+        <a href="#">İletişim</a>-->
+    <!-- <div class="header">
+       
+    </div> -->
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header_logo">
+                <img src="assets/img/logo.png" alt="Tile Price Calculator">
+            </div>
+
+           <div class="header_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Contact Us</a></li> 
+                </ul>
+           </div> 
+
+        </div> 
+    </header>
+    <main>
+        <div class="container">
+            <div class="products">
+                <h2>Choose a product to calculate price</h2>
+                <div class="product selected" data-price="15">
+                    <a href="#">
+                        <img src="assets/img/TER-CEP-2448-POL.jpg" alt="TERRA CEPPO 24X48 POLISHED">
+                    </a>
+                    <div class="product-info">
+                        <p>TERRA CEPPO 24X48 POLISHED</p>
+                        <b>
+                            15$/sqft
+                        </b>
+                    </div>
+                </div>
+                <div class="product" data-price="20">
+                    <a href="#">
+                        <img src="assets/img/TER-CEP-2448-MAT.jpg" alt="TERRA CEPPO 24X48 MATTE">
+                    </a>
+                    <div class="product-info">
+                        <p>TERRA CEPPO 24X48 MATTE</p>
+                        <b>
+                            20$/sqft
+                        </b>
+                    </div> 
+                </div>
+                <div class="product" data-price="25">
+                    <a href="#">
+                        <img src="assets/img/PIA-BLK-1212.jpg" alt="PIANO BLACK 12X12">
+                    </a> 
+                    <div class="product-info">
+                        <p>PIANO BLACK 12X12</p>
+                        <b>
+                            25$/sqft
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator">
+                <div class="input-group-container">
+                    <h2>Calculator</h2>
+                    <div class="input-group-row">
+                       
+                        <div class="input-group">
+                            <label for="width">Width</label>
+                            <input type="number" id="width">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="height">Height</label>
+                            <input type="number" id="height">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="sqft">Sqft</label>
+                        <input type="number" id="sqft">
+                    </div>
+                </div>
+                <button class="button-calculate" id="calculate">Calculate</button>
+                <p class="result">
+                    <b>Total Price:</b>
+                    <span id="total-price">0</span>$
+                    for <span id="total-sqft">0</span> sqft
+
+                 </p>
+             
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Tile Price Calculator &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>

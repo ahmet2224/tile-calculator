@@ -1,0 +1,192 @@
+ /* Tarayıcı varsayılan margin ve padding'lerini sıfırla */
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+/* Üst Bilgi (Header) */
+.header {
+    width: 100%;
+    background-color: #faf0e6;
+     
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+}
+
+.header a {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: black;
+}
+
+ 
+
+/* Ürünler Bölümü */
+.products {
+    background-color: #fff0db;
+    flex-basis: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.products a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;  pointer-events: none; 
+}
+
+.products img {
+    width: 200px;
+    height: 100px; 
+    pointer-events: none;
+}
+
+.products p {
+    margin: 0; 
+}
+
+.products .product {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.products .product.selected {
+    background-color: #f0e68c;
+    border: 1px dotted #f0e68c;
+}
+.products h2, .calculator h2{
+    margin: 0;
+}
+ .products .product .product-info {
+    pointer-events: none;
+ } 
+
+
+
+.input-group-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.input-group-row {
+    display: flex;
+    gap: 15px; /* Kutular arasındaki boşluk */
+    width: 100%; 
+}
+
+.input-group {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px; /* Etiket ile input arasında boşluk */
+}
+ 
+ 
+input {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.calculator button {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.button-calculate {
+    background-color: red;
+    margin-top: 10px;
+}
+ 
+.result {
+    margin-top: 20px;
+    font-size: 20px; 
+}
+
+body {
+    font-family: sans-serif;
+}
+ 
+.header {
+    padding: 10px 0;
+}
+
+.header .header_logo {
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+}
+.header .header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 80%;
+}
+.header .header_menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+}
+.header .header_menu ul li a { 
+    padding: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 70%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+main {
+    padding: 50px 0;
+}
+
+main .container {
+    align-items: unset;
+}
+ 
+.calculator {
+    background-color: #fff0db;
+    flex-basis: 50%;
+    padding: 30px 15px; 
+    display: flex;
+    flex-direction: column;
+}
+
